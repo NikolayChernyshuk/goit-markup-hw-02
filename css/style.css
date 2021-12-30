@@ -24,3 +24,10 @@ body{
     font-weight: bold;
     font-family: 'Raleway';
 }
+/*End Style Logo*/
+/*img portfolio*/
+.img-portfolio{
+    width: 370px;
+    height: 294px;
+}
+/*end img portfolio*/
