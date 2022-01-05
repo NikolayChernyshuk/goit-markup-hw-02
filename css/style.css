@@ -1,10 +1,27 @@
-body{
-    background-color: ##FFFFFF;
-    color: rgba:(0, 0, 0, 0.8);
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
+:root{
+    --main-text-color: rgba(0, 0, 0, 0.8);;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --darkgray-color: #212121;
+    --blue-color: #2196F3;
+    --gray-color: #757575;
+    --background-darkgray: #2F303A;
+    --button-hover-color: #F5F4FA;
 }
 
+
+
+body{
+    background-color: var(--white-color);
+    color: var(--main-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+}
+/********************
+1. BASIK
+********************/
 .list{
     list-style-type: none;
 }
@@ -13,21 +30,195 @@ body{
 .logo{
     font-size: 26px;
     text-decoration: none;
-    color: #2196F3;
+    color: var(--blue-color);
     font-weight: bold;
     font-family: 'Raleway';
 }
 .logo-black{
     font-size: 26px;
     text-decoration: none;
-    color: #000000;
+    color: var(--black-color);
+    font-weight: bold;
+    font-family: 'Raleway';
+}
+.logo-white{
+    font-size: 26px;
+    text-decoration: none;
+    color: var(--white-color);
     font-weight: bold;
     font-family: 'Raleway';
 }
 /*End Style Logo*/
+/*Start Style Navmenu*/
+.text-navmenu{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--darkgray-color);
+    text-decoration: none;
+}    
+.text-navmenu:hover{
+    color: var(--blue-color);
+    text-decoration: none;
+}
+.text-contacts{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--gray-color);
+    text-decoration: none;
+}
+.text-contacts:hover{
+    color: var(--blue-color);
+    text-decoration: none;
+}
+.text-contacts:focus{
+    color: var(--blue-color);
+    text-decoration: none;
+}
+/*End Style Navmenu*/
+
+/********************
+2. HOME
+********************/
+.background-banner{
+    background-color: var(--background-darkgray);
+}
+.text-home-h1{
+    width: 696px;
+    height: 120px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+.button-banner{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    border-radius: 4px;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    border: none;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.button-banner:hover{
+    color: var(--blue-color);
+    background-color: var(--white-color);
+}
+.services-h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--darkgray-color);
+}
+.services-p{
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
+}
+.h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--darkgray-color);
+}
+.section-team{
+    background-color: var(--button-hover-color);
+}
+.team-h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--darkgray-color);
+}
+.team-p{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
+}
+/********************
+3. PORTFOLIO
+********************/
+
+/*start style buttons portfolio*/
+.portfolio-button{
+    height: 38px;
+    font-size: 16px;
+    line-height: 1.14;
+    font-weight: 500;
+    font-family: 'Roboto';
+    font-style: normal;
+    border-radius: 4px;
+    background-color: var(--button-hover-color);
+    border: none;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+}
+.portfolio-button:hover{
+    background: var(--blue-color);
+    color: var(--white-color);
+}
+/*end style buttons portfolio*/
 /*img portfolio*/
 .img-portfolio{
     width: 370px;
     height: 294px;
 }
+.portfolio-imgtext-h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--darkgray-color);
+}
+.portfolio-imgtext-p{
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--gray-color);
+}
 /*end img portfolio*/
+
+/********************
+4. FOOTER
+********************/
+.bg-footer{
+    background-color: var(--background-darkgray);
+}
